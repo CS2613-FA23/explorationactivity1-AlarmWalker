@@ -1,19 +1,24 @@
 import requests
 from bs4 import BeautifulSoup
 
+#Provinces of interest
 provinces = ["new-brunswick", "prince-edward-island", "nova-scotia", "newfoundland-labrador"]
 
 news_data = []
 
-#loop through Atlantic provinces
+#loop through the provinces
 for i in provinces:
     page_url = "https://www.cbc.ca/news/canada/" + i
     response = requests.get(page_url)
 
+    #Parse the html content of the page
     soup = BeautifulSoup(response.text, 'html.parser')
 
+    #locate where news contents are located
     news_contents = soup.find('div', class_= 'contentArea')
-    news_elements = news_contents.find_all('a', class_= 'card')
+    
+    #Find and extract informations
+    news_elements = news_contents.find_all('a', class_= 'card') 
 
     for news_element in news_elements:
         news = {}

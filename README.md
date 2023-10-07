@@ -18,7 +18,7 @@ To run this program, follow these steps:
 - Python 3 installed on your computer.
 - Install required libraries by running:
 
-pip install requests beautifulsoup4
+`pip install requests beautifulsoup4`
 
 ### Execution
 
@@ -27,22 +27,24 @@ pip install requests beautifulsoup4
 3. Navigate to the directory where the script is located.
 4. Run the script using Python:
 
-python scrap_news.py
+`python scrap_news.py`
 
 ## 3. Purpose
 
-The purpose of this program is to demonstrate web scraping techniques using Python. It scrapes news articles from CBC Canada for specified provinces.
+The purpose of this program is to demonstrate web scraping techniques using BeautifulSoup library from python. It scrapes news articles from CBC Canada for specified provinces.
 
 ## 4. Sample Input/Output
 
 - Sample Input: No input required. Program scrapes news articles from atlantic provinces by default.
 - Sample Output:
+  <code>
   Title: Sample News Title 1
   Summary: This is a sample news summary for the first article.
   Location: new-brunswick
 
-Title: Sample News Title 2
-Summary: This is a sample news summary for the second article.
-Location: nova-scotia
+  Title: Sample News Title 2
+  Summary: This is a sample news summary for the second article.
+  Location: nova-scotia
+  </code>
 
 Note: The actual news content will vary based on the data available on the CBC Canada website.
