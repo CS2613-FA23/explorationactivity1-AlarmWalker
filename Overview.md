@@ -34,21 +34,21 @@ Package/Library: Beautiful Soup (bs4) and Requests (requests)
    Examples:
    <pre>
    <code>
-   ```python
-   import requests
-   from bs4 import BeautifulSoup
-
-# Make an HTTP request
-
-response = requests.get('https://example.com')
-
-# Parse the HTML content
-
-soup = BeautifulSoup(response.text, 'html.parser')
-
-# Find and extract elements
-
-title = soup.find('h1').text
+      ```python
+      import requests
+      from bs4 import BeautifulSoup
+   
+    # Make an HTTP request
+   
+    response = requests.get('https://example.com')
+   
+    # Parse the HTML content
+   
+    soup = BeautifulSoup(response.text, 'html.parser')
+   
+    # Find and extract elements
+   
+    title = soup.find('h1').text
 
 </pre>
 </code>
@@ -61,7 +61,7 @@ title = soup.find('h1').text
    They provide a simple and effective way to extract data from web pages.
 
 6. Impact on Learning <a name="impact-on-learning"></a>
-   I already have experience web scraping using another language/framework such as Selenium in JS. Using python library to do similar task was interesing.
+   I already have experience web scraping using another language/framework such as Selenium in JS. Using python library to do similar tasks was interesing.
    It enhanced my understanding of how to work with external libraries in Python.
 
 7. Overall Experience <a name="overall-experience"></a>
