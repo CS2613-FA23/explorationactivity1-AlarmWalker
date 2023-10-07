@@ -37,14 +37,16 @@ The purpose of this program is to demonstrate web scraping techniques using Beau
 
 - Sample Input: No input required. Program scrapes news articles from atlantic provinces by default.
 - Sample Output:
-  <code>
-  Title: Sample News Title 1
-  Summary: This is a sample news summary for the first article.
-  Location: new-brunswick
+<pre>
+ <code>
+ Title: Sample News Title 1
+ Summary: This is a sample news summary for the first article.
+ Location: new-brunswick
 
-  Title: Sample News Title 2
-  Summary: This is a sample news summary for the second article.
-  Location: nova-scotia
-  </code>
+ Title: Sample News Title 2
+ Summary: This is a sample news summary for the second article.
+ Location: nova-scotia
+ </code>
+ </pre>
 
 Note: The actual news content will vary based on the data available on the CBC Canada website.
