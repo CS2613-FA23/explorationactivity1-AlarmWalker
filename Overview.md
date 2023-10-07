@@ -1,15 +1,13 @@
-Table of Contents
-Introduction
-Package/Library Selection
-Package/Library Details
-What is the package/library?
-Purpose and Usage
-Functionalities and Examples
-Package/Library History
-Reasons for Selection
-Impact on Learning
-Overall Experience
-Recommendation and Future Use
+# Table of Contents
+
+- [Introduction](#introduction)
+- [Package/Library Selection](#package-library-selection)
+- [Package/Library Details](#package-library-details)
+- [Package/Library History](#package-library-history)
+- [Reasons for Selection](#reasons-for-selection)
+- [Impact on Learning](#impact-on-learning)
+- [Overall Experience](#overall-experience)
+- [Recommendation and Future Use](#recommendation-and-future-use)
 
 1. Introduction <a name="introduction"></a>
    Welcome to the Wiki for Web Scraping with BeautifulSoup. In this Wiki, we will explore the package/library used in the project, its purpose, functionalities, and more.
@@ -24,34 +22,35 @@ Package/Library: Beautiful Soup (bs4) and Requests (requests)
 
 3. Package/Library Details <a name="package-library-details"></a>
    What is the package/library? <a name="what-is-the-package-library"></a>
-   Purpose: Beautiful Soup (bs4) is a Python library used for parsing and navigating HTML and XML documents[1], while Requests (requests) is a library for making HTTP requests. [3]Together, they form a powerful combination for web scraping.
+   Purpose: Beautiful Soup (bs4) is a Python library used for parsing and navigating HTML and XML documents[1], while Requests (requests) is a library for making HTTP requests. [3] Together, they form a powerful combination for web scraping.
+
    Purpose and Usage <a name="purpose-and-usage"></a>
    Purpose: These libraries serve the purpose of extracting data from web pages by parsing their HTML content. [5]
    Usage: They are commonly used for web scraping, data mining, and data extraction tasks. [5]
+
    Functionalities and Examples <a name="functionalities-and-examples"></a>
    Functionalities: Beautiful Soup allows you to locate and manipulate HTML/XML elements.
 
    Examples:
-   <pre>
-   <code>
-      ```python
-      import requests
-      from bs4 import BeautifulSoup
-   
-    # Make an HTTP request
-   
-    response = requests.get('https://example.com')
-   
-    # Parse the HTML content
-   
-    soup = BeautifulSoup(response.text, 'html.parser')
-   
-    # Find and extract elements
-   
-    title = soup.find('h1').text
-
-</pre>
-</code>
+      <pre>
+      <code>
+         ```python
+         import requests
+         from bs4 import BeautifulSoup
+      
+       # Make an HTTP request
+      
+       response = requests.get('https://example.com')
+      
+       # Parse the HTML content
+      
+       soup = BeautifulSoup(response.text, 'html.parser')
+      
+       # Find and extract elements
+      
+       title = soup.find('h1').text
+   </pre>
+   </code>
 
 4. Package/Library History <a name="package-library-history"></a>
    Creation Date: Beautiful Soup was first released in 2004, the current release is Beautiful Soup 4.12.2 (April 7, 2023).[2]
