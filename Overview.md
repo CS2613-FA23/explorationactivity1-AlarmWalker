@@ -9,64 +9,72 @@
 - [Overall Experience](#overall-experience)
 - [Recommendation and Future Use](#recommendation-and-future-use)
 
-1. Introduction <a name="introduction"></a>
-   Welcome to the Wiki for Web Scraping with BeautifulSoup. In this Wiki, we will explore the package/library used in the project, its purpose, functionalities, and more.
+## 1. Introduction <a name="introduction"></a>
 
-   What is web scraping?
-   Web scraping is the process of gathering information from the Internet. Even copying and pasting the lyrics of your favorite song is a form of web scraping! However, the words “web scraping” usually refer to a process that involves automation.[4]
+Welcome to the Wiki for Web Scraping with BeautifulSoup. In this Wiki, we will explore the package/library used in the project, its purpose, functionalities, and more.
 
-2. Package/Library Selection <a name="package-library-selection"></a>
-   For this project, I selected the following package/library:
+What is web scraping?
+Web scraping is the process of gathering information from the Internet. Even copying and pasting the lyrics of your favorite song is a form of web scraping! However, the words “web scraping” usually refer to a process that involves automation.[4]
+
+## 2. Package/Library Selection <a name="package-library-selection"></a>
+
+For this project, I selected the following package/library:
 
 Package/Library: Beautiful Soup (bs4) and Requests (requests)
 
-3. Package/Library Details <a name="package-library-details"></a>
-   What is the package/library? <a name="what-is-the-package-library"></a>
-   Purpose: Beautiful Soup (bs4) is a Python library used for parsing and navigating HTML and XML documents[1], while Requests (requests) is a library for making HTTP requests. [3] Together, they form a powerful combination for web scraping.
+## 3. Package/Library Details <a name="package-library-details"></a>
 
-   Purpose and Usage <a name="purpose-and-usage"></a>
-   Purpose: These libraries serve the purpose of extracting data from web pages by parsing their HTML content. [5]
-   Usage: They are commonly used for web scraping, data mining, and data extraction tasks. [5]
+What is the package/library? <a name="what-is-the-package-library"></a>
+Purpose: Beautiful Soup (bs4) is a Python library used for parsing and navigating HTML and XML documents[1], while Requests (requests) is a library for making HTTP requests. [3] Together, they form a powerful combination for web scraping.
 
-   Functionalities and Examples <a name="functionalities-and-examples"></a>
-   Functionalities: Beautiful Soup allows you to locate and manipulate HTML/XML elements.
+Purpose and Usage <a name="purpose-and-usage"></a>
+Purpose: These libraries serve the purpose of extracting data from web pages by parsing their HTML content. [5]
+Usage: They are commonly used for web scraping, data mining, and data extraction tasks. [5]
 
-   Examples:
-      <pre>
-      <code>
-         ```python
-         import requests
-         from bs4 import BeautifulSoup
-      
+Functionalities and Examples <a name="functionalities-and-examples"></a>
+Functionalities: Beautiful Soup allows you to locate and manipulate HTML/XML elements.
+
+Examples:
+<pre>
+<code>
+```python
+import requests
+from bs4 import BeautifulSoup
+
        # Make an HTTP request
-      
+
        response = requests.get('https://example.com')
-      
+
        # Parse the HTML content
-      
+
        soup = BeautifulSoup(response.text, 'html.parser')
-      
+
        # Find and extract elements
-      
+
        title = soup.find('h1').text
+
    </pre>
    </code>
 
-4. Package/Library History <a name="package-library-history"></a>
-   Creation Date: Beautiful Soup was first released in 2004, the current release is Beautiful Soup 4.12.2 (April 7, 2023).[2]
+## 4. Package/Library History <a name="package-library-history"></a>
 
-5. Reasons for Selection <a name="reasons-for-selection"></a>
-   Initially, the name of the library was what got my interest. I selected Beautiful Soup after learning they are widely used and well-documented libraries for web scraping in Python.
-   They provide a simple and effective way to extract data from web pages.
+Creation Date: Beautiful Soup was first released in 2004, the current release is Beautiful Soup 4.12.2 (April 7, 2023).[2]
 
-6. Impact on Learning <a name="impact-on-learning"></a>
-   I already have experience web scraping using another language/framework such as Selenium in JS. Using python library to do similar tasks was interesing.
-   It enhanced my understanding of how to work with external libraries in Python.
+## 5. Reasons for Selection <a name="reasons-for-selection"></a>
 
-7. Overall Experience <a name="overall-experience"></a>
-   Recommendation: I highly recommend these libraries to anyone involved in web scraping or data collection tasks. I found it is simpler than other libraries I've used.
-   However, it also had limitations well. Initally, I tried web scraping from Amazon. It was challening as Amaznon's website is dynamic and loaded with JS. BeautifulSoup is primarily designed for parsing static or semi-static web pages.[5]
-   Future Use: I will continue to use Beautiful Soup for simple data collection due to their reliability and ease of use.
+Initially, the name of the library was what got my interest. I selected Beautiful Soup after learning they are widely used and well-documented libraries for web scraping in Python.
+They provide a simple and effective way to extract data from web pages.
+
+## 6. Impact on Learning <a name="impact-on-learning"></a>
+
+I already have experience web scraping using another language/framework such as Selenium in JS. Using python library to do similar tasks was interesing.
+It enhanced my understanding of how to work with external libraries in Python.
+
+## 7. Overall Experience <a name="overall-experience"></a>
+
+Recommendation: I highly recommend these libraries to anyone involved in web scraping or data collection tasks. I found it is simpler than other libraries I've used.
+However, it also had limitations well. Initally, I tried web scraping from Amazon. It was challening as Amaznon's website is dynamic and loaded with JS. BeautifulSoup is primarily designed for parsing static or semi-static web pages.[5]
+Future Use: I will continue to use Beautiful Soup for simple data collection due to their reliability and ease of use.
 
 ### References
 
