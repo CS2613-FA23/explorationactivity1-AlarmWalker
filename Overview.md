@@ -9,7 +9,6 @@
 - [Reasons for Selection](#reasons-for-selection)
 - [Impact on Learning](#impact-on-learning)
 - [Overall Experience](#overall-experience)
-- [Recommendation and Future Use](#recommendation-and-future-use)
 
 ## 1. Introduction <a name="introduction"></a>
 
