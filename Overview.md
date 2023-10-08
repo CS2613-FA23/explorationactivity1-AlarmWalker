@@ -80,7 +80,7 @@ It enhanced my understanding of how to work with external libraries in Python.
 
 ## 7. Overall Experience <a name="overall-experience"></a>
 
-I highly recommend this library to anyone involved in web scraping or data collection tasks. I found it is simpler than other libraries I've used.
+I highly recommend this library to anyone involved in web scraping or data collection tasks. I found it is simpler than other libraries I've used when webscraping.
 However, it also had limitations well. Initally, I tried web scraping from Amazon. It was challening as Amaznon's website is dynamic and loaded with JS. BeautifulSoup is primarily designed for parsing static or semi-static web pages.[5]
 I will continue to use Beautiful Soup for simple data collection due to their reliability and ease of use.
 
