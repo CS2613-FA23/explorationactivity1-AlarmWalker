@@ -22,7 +22,51 @@ Web scraping is the process of gathering information from the Internet. Copying 
 
 For this project, I selected the following package/library:
 
-Package/Library: Beautiful Soup (bs4) and Requests (requests)
+Package/Library: Beautiful Soup (bs4).
+
+### How to use it?
+
+1. Before using BeautifulSoup, you need to install it.
+
+```bash
+pip install beautifulsoup4
+```
+
+2. In your Python script, import BeautifulSoup from the `bs4` package along with the `requests` library which is commonly used together:
+
+```python
+from bs4 import BeautifulSoup
+import requests
+```
+
+3. Create a BeautifulSoup Object.
+   To parse an HTML or XML document, create a BeautifulSoup object by passing the document content and a parser to the constructor. Example: [Creating BeautifulSoup object](#ex1-creating-beautifulsoup-object)
+
+4. Navigating the Document:
+   You can navigate the document using various methods and properties provided by BeautifulSoup. Here are some common navigation methods:
+
+   `soup.tag_name`: Access the first occurrence of a tag with a specific name.
+
+   `soup.tag_name.string`: Access the text content of a tag.
+
+   `soup.find('tag_name')`: Find the first occurrence of a specific tag.
+
+   `soup.find_all('tag_name')`: Find all occurrences of a specific tag and return a list.
+
+   `tag.parent`, `tag.next_sibling`, `tag.previous_sibling`: Navigate to the parent and siblings of a tag.
+
+   `tag.get('attribute')`: Access the value of an attribute in a tag.
+
+   `tag.contents`: Access the direct children of a tag as a list.
+
+   `tag.descendants`: Iterate through all descendants of a tag. [1]
+
+5. Extracting Data:
+   Finally you can extract the data you are interested in:
+   ```python
+   # Extract the text content of the 'h1' tag
+    h1_text = soup.h1.string
+   ```
 
 ## 3. Package/Library Details <a name="package-library-details"></a>
 
@@ -33,9 +77,11 @@ They are commonly used for web scraping, data mining, and data extraction tasks.
 
 Beautiful Soup allows you to locate and manipulate HTML/XML elements.[1]
 
-### Examples:
+## Examples:
 
-```
+### EX1 Creating BeautifulSoup object <a name="creating-BeautifulSoup-object"></a>
+
+```python
 import requests
 from bs4 import BeautifulSoup
 
@@ -47,22 +93,87 @@ from bs4 import BeautifulSoup
 
     soup = BeautifulSoup(response.text, 'html.parser')
 
-    # Find and extract elements
+```
 
-    title = soup.find('h1')
+### EX2 Prettify() to format document
+
+The 'prettify()' method is used to format the document with proper indentation[1]
+
+```python
+print(soup.prettify())
+```
+
+### Output
+
+```html
+<html>
+  <body>
+    <p>Hello, World!</p>
+  </body>
+</html>
+```
+
+### EX3 `find()` and `find_all()` - searching for elements
+
+`find()` returns the first matching element, and `find_all()` returns a list of all matching elements.
+
+```python
+# Find the first 'p' element
+first_p = soup.find('p')
+print(first_p)
+
+# Find all 'p' elements
+all_p = soup.find_all('p')
+print(all_p)
+
 ```
 
 ### Output:
 
+```html
+<p>Hello, World!</p>
+[
+<p>Hello, World!</p>
+]
 ```
-<h1>title of the website</h1>
+
+### EX4 Accessing tag attributes:
+
+You can access attributes of a tag using dictionary-like notation.
+
+```python
+tag = soup.find('p')
+print(tag['class'])
 ```
 
-To extract only the text and not the tag, you can put `.text` after.
+### Output:
 
-ex) `title = soup.find('h1').text`
+```css
+['my-class']
+```
 
-output) `title of the website`
+### EX5 Navigating the document:
+
+BeautifulSoup provides methods like `parent`, `next_sibling`, and `previous_sibling` to navigate the document tree.
+
+```py
+body = soup.body
+paragraph = body.p
+next_paragraph = paragraph.next_sibling
+```
+
+### EX6 `get_text()` to extract text content
+
+The `get_text()` method extracts the text content of a tag and its descendants.
+
+```py
+text = soup.get_text()
+print(text)
+```
+
+### Output
+
+`Hello, World!`
 
 ## 4. Package/Library History <a name="package-library-history"></a>
 
