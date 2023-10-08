@@ -1,4 +1,6 @@
-# Table of Contents
+### Webscraping using BeautifulSoup
+
+## Table of Contents
 
 - [Introduction](#introduction)
 - [Package/Library Selection](#package-library-selection)
@@ -14,7 +16,7 @@
 Welcome to the Wiki for Web Scraping with BeautifulSoup. In this Wiki, we will explore the package/library used in the project, its purpose, functionalities, and more.
 
 What is web scraping?
-Web scraping is the process of gathering information from the Internet. Even copying and pasting the lyrics of your favorite song is a form of web scraping! However, the words “web scraping” usually refer to a process that involves automation.[4]
+Web scraping is the process of gathering information from the Internet. Copying and pasting from some other websites is a form of web scraping. However, webscraping is typically considered as automation process.[4]
 
 ## 2. Package/Library Selection <a name="package-library-selection"></a>
 
@@ -24,37 +26,43 @@ Package/Library: Beautiful Soup (bs4) and Requests (requests)
 
 ## 3. Package/Library Details <a name="package-library-details"></a>
 
-What is the package/library? <a name="what-is-the-package-library"></a>
-Purpose: Beautiful Soup (bs4) is a Python library used for parsing and navigating HTML and XML documents[1], while Requests (requests) is a library for making HTTP requests. [3] Together, they form a powerful combination for web scraping.
+Beautiful Soup (bs4) is a Python library used for parsing and navigating HTML and XML documents[1], while Requests (requests) is a library for making HTTP requests. [3] Together, they form a powerful combination for web scraping.
+These libraries serve the purpose of extracting data from web pages by parsing their HTML content. [5]
 
-Purpose and Usage <a name="purpose-and-usage"></a>
-Purpose: These libraries serve the purpose of extracting data from web pages by parsing their HTML content. [5]
-Usage: They are commonly used for web scraping, data mining, and data extraction tasks. [5]
+They are commonly used for web scraping, data mining, and data extraction tasks. [5]
 
-Functionalities and Examples <a name="functionalities-and-examples"></a>
-Functionalities: Beautiful Soup allows you to locate and manipulate HTML/XML elements.
+Beautiful Soup allows you to locate and manipulate HTML/XML elements.[1]
 
-Examples:
-<pre>
-<code>
-```python
+### Examples:
+
+```
 import requests
 from bs4 import BeautifulSoup
 
-       # Make an HTTP request
+    # Make an HTTP request
 
-       response = requests.get('https://example.com')
+    response = requests.get('https://example.com')
 
-       # Parse the HTML content
+    # Parse the HTML content
 
-       soup = BeautifulSoup(response.text, 'html.parser')
+    soup = BeautifulSoup(response.text, 'html.parser')
 
-       # Find and extract elements
+    # Find and extract elements
 
-       title = soup.find('h1').text
+    title = soup.find('h1')
+```
 
-   </pre>
-   </code>
+### Output:
+
+```
+<h1>title of the website</h1>
+```
+
+To extract only the text and not the tag, you can put `.text` after.
+
+ex) `title = soup.find('h1').text`
+
+output) `title of the website`
 
 ## 4. Package/Library History <a name="package-library-history"></a>
 
@@ -72,9 +80,9 @@ It enhanced my understanding of how to work with external libraries in Python.
 
 ## 7. Overall Experience <a name="overall-experience"></a>
 
-Recommendation: I highly recommend these libraries to anyone involved in web scraping or data collection tasks. I found it is simpler than other libraries I've used.
+I highly recommend this library to anyone involved in web scraping or data collection tasks. I found it is simpler than other libraries I've used.
 However, it also had limitations well. Initally, I tried web scraping from Amazon. It was challening as Amaznon's website is dynamic and loaded with JS. BeautifulSoup is primarily designed for parsing static or semi-static web pages.[5]
-Future Use: I will continue to use Beautiful Soup for simple data collection due to their reliability and ease of use.
+I will continue to use Beautiful Soup for simple data collection due to their reliability and ease of use.
 
 ### References
 
