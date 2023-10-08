@@ -15,7 +15,7 @@
 Welcome to the Wiki for Web Scraping with BeautifulSoup. In this Wiki, we will explore the package/library used in the project, its purpose, functionalities, and more.
 
 What is web scraping?
-Web scraping is the process of gathering information from the Internet. Copying and pasting from some other websites is a form of web scraping. However, webscraping is typically considered as automation process.[4]
+Web scraping is the process of gathering information from the Internet. Copying and pasting from some other websites is a form of web scraping. However, webscraping is typically considered as an automation process.[4]
 
 ## 2. Package/Library Selection <a name="package-library-selection"></a>
 
