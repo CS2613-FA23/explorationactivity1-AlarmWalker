@@ -79,7 +79,7 @@ Beautiful Soup allows you to locate and manipulate HTML/XML elements.[1]
 
 ## Examples:
 
-## EX1 Creating BeautifulSoup object <a name="creating-BeautifulSoup-object"></a>
+### EX1 Creating BeautifulSoup object <a name="creating-BeautifulSoup-object"></a>
 
 ```python
 import requests
