@@ -40,7 +40,7 @@ import requests
 ```
 
 3. Create a BeautifulSoup Object.
-   To parse an HTML or XML document, create a BeautifulSoup object by passing the document content and a parser to the constructor. Example: [Creating BeautifulSoup object](#ex1-creating-beautifulsoup-object)
+   To parse an HTML or XML document, create a BeautifulSoup object by passing the document content and a parser to the constructor. Example: [Creating BeautifulSoup object](#creating-BeautifulSoup-object)
 
 4. Navigating the Document:
    You can navigate the document using various methods and properties provided by BeautifulSoup. Here are some common navigation methods:
@@ -79,7 +79,7 @@ Beautiful Soup allows you to locate and manipulate HTML/XML elements.[1]
 
 ## Examples:
 
-### EX1 Creating BeautifulSoup object <a name="creating-BeautifulSoup-object"></a>
+## EX1 Creating BeautifulSoup object <a name="creating-BeautifulSoup-object"></a>
 
 ```python
 import requests
