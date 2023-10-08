@@ -4,10 +4,9 @@
 
 ## 1. Package/Library
 
-This sample program demonstrates the usage of the following Python libraries:
+This sample program demonstrates the usage of the following Python library:
 
 - `BeautifulSoup` (from `bs4`) for parsing and navigating HTML content.
-- `requests` for making HTTP requests to web pages.
 
 ## 2. How to Run
 
@@ -43,10 +42,11 @@ The purpose of this program is to demonstrate web scraping techniques using Beau
  Summary: This is a sample news summary for the first article.
  Location: new-brunswick
 
- Title: Sample News Title 2
- Summary: This is a sample news summary for the second article.
- Location: nova-scotia
- </code>
+Title: Sample News Title 2
+Summary: This is a sample news summary for the second article.
+Location: nova-scotia
+</code>
+
  </pre>
 
 Note: The actual news content will vary based on the data available on the CBC Canada website.
