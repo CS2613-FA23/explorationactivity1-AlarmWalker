@@ -115,7 +115,7 @@ print(soup.prettify())
 
 ### EX3 `find()` and `find_all()` - searching for elements
 
-`find()` returns the first matching element, and `find_all()` returns a list of all matching elements.
+`find()` returns the first matching element, and `find_all()` returns a list of all matching elements.[1]
 
 ```python
 # Find the first 'p' element
@@ -139,7 +139,7 @@ print(all_p)
 
 ### EX4 Accessing tag attributes:
 
-You can access attributes of a tag using dictionary-like notation.
+You can access attributes of a tag using dictionary-like notation.[1]
 
 ```python
 tag = soup.find('p')
@@ -154,7 +154,7 @@ print(tag['class'])
 
 ### EX5 Navigating the document:
 
-BeautifulSoup provides methods like `parent`, `next_sibling`, and `previous_sibling` to navigate the document tree.
+BeautifulSoup provides methods like `parent`, `next_sibling`, and `previous_sibling` to navigate the document tree.[1]
 
 ```py
 body = soup.body
@@ -164,7 +164,7 @@ next_paragraph = paragraph.next_sibling
 
 ### EX6 `get_text()` to extract text content
 
-The `get_text()` method extracts the text content of a tag and its descendants.
+The `get_text()` method extracts the text content of a tag and its descendants.[1]
 
 ```py
 text = soup.get_text()
