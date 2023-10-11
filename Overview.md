@@ -176,7 +176,7 @@ print(text)
 
 ## 4. Package/Library History <a name="package-library-history"></a>
 
-Creation Date: Beautiful Soup was first released in 2004, the current release is Beautiful Soup 4.12.2 (April 7, 2023).[2]
+Beautiful Soup was first released in 2004, the current release is Beautiful Soup 4.12.2 (April 7, 2023).[2]
 
 ## 5. Reasons for Selection <a name="reasons-for-selection"></a>
 
